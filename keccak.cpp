@@ -1,10 +1,7 @@
 #include <iostream>
 
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
-
-
 #define ROL64(a, offset) ((((uint64_t)a) << offset) ^ (((uint64_t)a) >> (64-offset)))
-
 
 const uint64_t roundConstants[24] = { 0x0000000000000001, 0x0000000000008082, 0x800000000000808A, 0x8000000080008000,
 0x000000000000808B, 0x0000000080000001, 0x8000000080008081, 0x8000000000008009,
